@@ -1,0 +1,60 @@
+* {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+}
+.yellow-background {
+  background-color: hsl(47, 88%, 63%);
+}
+.black-text {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+.card {
+  background-color: white;
+  border: 0.1rem solid hsl(0, 0%, 7%);
+  border-radius: 20px;
+  display: flexbox;
+  justify-content: center;
+  max-width: 350px;
+  margin: 250px auto;
+  padding: 30px;
+  box-shadow: 10px 10px hsl(0, 0%, 7%);
+}
+.grey-text {
+  color: hsl(0, 0%, 50%);
+}
+.bold {
+  font-weight: 700;
+}
+.illustration {
+  width: 100%;
+  border-radius: 20px;
+}
+h1 {
+  font-size: 1.5em;
+}
+.avatar {
+  max-width: 3rem;
+  margin-right: 1rem;
+}
+.inline {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .card {
+    margin: 10rem 1rem 10rem 1rem;
+    padding: 20px;
+    max-width: 90%;
+  }
+  .avatar {
+    margin-right: 10px;
+  }
+  .inline {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+  }
+}

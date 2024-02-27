@@ -3,58 +3,89 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 16px;
+  transition: all 0.2s;
+  margin: 0px;
+  padding: 0px;
 }
-.yellow-background {
-  background-color: hsl(47, 88%, 63%);
-}
-.black-text {
-  width: fit-content;
-  padding: 10px;
+article > ul > li {
+  list-style-type: none;
+  margin: 6% 1%;
+  padding: 2% 3%;
   border-radius: 5px;
 }
-.card {
+
+body > ul {
+  gap: 30px;
+  display: flex;
+  max-width: 90%;
+}
+
+article ul {
+  display: flex;
+  gap: 10px;
+  max-width: 100em;
+}
+li {
+  list-style-type: none;
+}
+article time {
+  margin: 5% 1%;
+}
+body,
+li {
+  background-color: hsl(47, 88%, 63%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+article {
   background-color: white;
   border: 0.1rem solid hsl(0, 0%, 7%);
   border-radius: 20px;
-  display: flexbox;
-  justify-content: center;
-  max-width: 350px;
-  margin: 250px auto;
-  padding: 30px;
-  box-shadow: 10px 10px hsl(0, 0%, 7%);
+  max-width: 20rem;
+  padding: 1.4rem;
+  padding-bottom: 0rem;
+  box-shadow: 0.6rem 0.6rem hsl(0, 0%, 7%);
 }
-.grey-text {
+article > p {
   color: hsl(0, 0%, 50%);
+  line-height: 1.5;
+  margin: 0% 1%;
 }
-.bold {
-  font-weight: 700;
+article li,
+.inline > p {
+  font-weight: 800;
+  margin: 5% 1%;
 }
-.illustration {
+article > img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 h1 {
   font-size: 1.5em;
+  font-weight: 900;
+  margin: 5% 1%;
 }
-.avatar {
-  max-width: 3rem;
-  margin-right: 1rem;
+h1:hover {
+  color: hsl(47, 88%, 63%);
+}
+article:hover:active {
+  box-shadow: 1rem 1rem hsl(0, 0%, 7%);
+}
+.inline > img {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
 }
 .inline {
   display: flex;
-  width: 100%;
+  margin: 5% 0%;
 }
-@media (max-width: 700px) {
-  .card {
-    margin: 10rem 1rem 10rem 1rem;
-    padding: 20px;
-    max-width: 90%;
-  }
-  .avatar {
-    margin-right: 10px;
-  }
-  .inline {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr;
-  }
+time {
+  font-size: 0.9rem;
 }
